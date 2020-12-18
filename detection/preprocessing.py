@@ -2,6 +2,7 @@ from typing import List
 from convokit import Corpus, download
 import pandas as pd
 
+
 def random_pick(
     df,
     columns=["text", "meta.Normalized Score", "meta.Binary", "meta.parsed"],
@@ -25,11 +26,10 @@ if __name__ == "__main__":
     stack_df = stack_corpus.get_utterances_dataframe()
     wiki_df.to_csv("data/wikipedia.csv")
     stack_df.to_csv("data/stack.csv")
+    contat_df = concat_df([wiki_df, stack_df])
+    contat_df = contat_df[contat_df["meta.Binary"] == 1]
+    contat_df_2500 = random_pick(contat_df, num=2500)
 
-    wiki_df_1250 = random_pick(wiki_df)
-    stack_df_1250 = random_pick(stack_df)
-
-    contat_df = concat_df([wiki_df_1250, stack_df_1250])
-    contat_df.to_csv("data/should_be_annotated.csv")
-    print("should_be_annotated length: ", len(contat_df))
+    contat_df_2500.to_csv("data/should_be_annotated.csv")
+    print("should_be_annotated length: ", len(contat_df_2500))
 
