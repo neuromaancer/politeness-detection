@@ -24,3 +24,15 @@ which corresponds to (without annotation of strategies):
 
 - stack.csv
 - wikipedia.csv
+
+## History file
+
+- bert_history.csv: Storing the loss and accuracy log of bert model.
+- w2v_history.csv: Storing the loss and accuracy log of w2v model.
+- history.csv: combined file with bert_history.csv and w2v_history.csv
+
+## Data file
+
+- data.csv: raw data file.
+- clean_dataset.csv: preprocessed data file (clean the text).
+- testset_human.csv: 50 samples annotated by 3 annotator. -> Ground Truth.
