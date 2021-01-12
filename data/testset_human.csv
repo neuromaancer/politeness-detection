@@ -1,0 +1,53 @@
+text,label
+"if you have time, can you correct the titles?",3.0
+i had really hoped to get some more opinions on this question.,6.0
+"i modified it a bit, possibly vote to reopen?",6.0
+well the only plausible explanation was that you reverted to where i removed an extraneous cat (after homestarmy's edit) and then swapped out a template... but as you're a competent editor that just seemed odd.,1.0
+is that what indeed occurred?,1.0
+"i didn't quite understand, what are you trying to achieve?",4.0
+what questions do you have and what is the desired output?,0.0
+"hi, i'd like to help you with the image you just uploaded to the <url> article.",2.0
+can you tell me where you found it?,3.0
+"yes, that is the real source code.",0.0
+"and the compilation has been performed without optimization, perhaps that is the reason?",4.0
+in that case it might not be the answer then (hence the comment).,2.0
+are you using the vs web server or iis express?,0.0
+thanks cameron.,7.0
+"that makes sense, but then why isn't this access restricted to only copy constructors and assignment operators?",2.0
+"""pyparsing"" appears to be a word specific to python.",0.0
+is there a more general programming term for that type of action?,4.0
+"the solution reported in the issue report is to replace any occurrence of `unset($form[$id])` with `$form[$id] = array('#language' => null)` in the module file; it just a matter of doing a ""search and replace"" on a file.",0.0
+what do you exactly don't understand?,4.0
+i haven't used those features much yet; can you explain what effect you'd like them to have on your blog?,4.0
+"should ignored tags make it so the user never even sees those posts, does it just affect the tag cloud, or something else?",4.0
+"yeah, it's difficult to tell what the columns mean from their names.",1.0
+can you add more explanation of how the tables fit together?,3.0
+do they all have the same size and orientation ?,0.0
+can you pivote them or should they conserve both proportion and orientation ?,3.0
+thanks for continuing to look over the article.,7.0
+do you know or do you know anyone that knows anything about the <url> or the <url>?,3.0
+"elkman, there are other ways to take a wikibreak.",0.0
+can i help?,3.0
+`ps -ef` shows all foreground processes for me.,0.0
+which os are you running on?,0.0
+"hi david, you're good with images.",1.0
+anything you can do to clean up <url> so it's useful on itn?,5.0
+"for those of us who aren't specifically familiar with `sendmail`, it might help if you post a more complete set of log lines, and describe exactly what details you're paying attention to when you do this manually.",2.0
+"for example, in the line you've posted, is `p937blksdh3` the message-id?",0.0
+"i believe you beat me to several vandalism reverts the other night, so i  thought i'd give you this.",4.0
+"we could all use more, right?",4.0
+"hi, thanks for unprotecting the <url> article.",7.0
+could you also unprotect <url> so a redirect can be created?,2.0
+"hi, i wanted to ask what do you follow to create redirects on this <url>?",6.0
+?,0.0
+the plane of the x will always be parallel to the plane of the image i assume?,5.0
+so no perspective distortion of the x?,4.0
+i started on it.,0.0
+do you more info on the last article on the list of references?,3.0
+"i don't follow you i was not aware that my edits were vandalism, i was editing according to what had (it appeared to me) been agreed on the talk page, but additional material had been inserted (that had not been agreed upon)  that esentialy said the same thing (and was not supported by the sources) that had caused the origioanl disagrement.",4.0
+"i think i may have mis-understood you point, are you saying that i can only revert three times if its vandalism, or that my edits were vandalims?",4.0
+can you elaborate?,4.0
+an example maybe?,4.0
+"if i have a simple graph (tree) with 4 nodes: a start node with 3 successors, where rightmost successor is an end node, then all three algorithms (dfs, bfs, id) will perform better backward than forward.",0.0
+correct?,1.0
+"d.w. if thats the case, as i thought, it's not really a security question, is it?",3.0

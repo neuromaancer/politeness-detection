@@ -2,6 +2,10 @@ from typing import List
 from convokit import Corpus, download
 import pandas as pd
 from rich import print
+import nltk
+from nltk import tokenize
+
+nltk.download("punkt")
 
 
 def random_pick(
@@ -17,7 +21,11 @@ def concat_df(frames: List):
 
 
 def sents_2_list(df):
-    return df["text"].values.tolist()
+    return df["Sentence"].values.tolist()
+
+
+def split_sent(text):
+    return tokenize.sent_tokenize(text)
 
 
 if __name__ == "__main__":
@@ -39,6 +47,8 @@ if __name__ == "__main__":
     # print("should_be_annotated length: ", len(contat_df_2500))
 
     df = pd.read_csv("data/should_be_annotated.csv")
-    l = sents_2_list(df)
-    print(l[:20])
-
+    li = list(map(split_sent, df.text.values))
+    flattened_list = [y for x in li for y in x]
+    print(flattened_list[1:20])
+    df_flatten = pd.DataFrame(flattened_list, columns=["Sentence"])
+    df_flatten.to_csv("data/sentence_to_annotated.csv")
