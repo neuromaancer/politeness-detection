@@ -28,6 +28,18 @@ def split_sent(text):
     return tokenize.sent_tokenize(text)
 
 
+def normalise_text(text):
+    text = text.strip()
+    text = text.lower()  # lowercase
+    text = text.replace(r"\#", "")  # replaces hashtags
+    text = text.replace(r"http\S+", "URL")  # remove URL addresses
+    text = text.replace(r"@", "")
+    text = text.replace(r"[^A-Za-z0-9()!?\'\`\"]", " ")
+    text = text.replace("\s{2,}", " ")
+    text = text.replace(r"\#", "")
+    return text
+
+
 if __name__ == "__main__":
     # wiki_corpus = Corpus(filename=download("wikipedia-politeness-corpus"))
     # stack_corpus = Corpus(filename=download("stack-exchange-politeness-corpus"))
