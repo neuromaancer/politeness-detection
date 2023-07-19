@@ -103,23 +103,18 @@ d_f = {'p1' : re.compile(r"\?$", re.IGNORECASE)}
 list_d = [d_01, d_02, d_04, d_05, d_06, d_07, d_09, d_012, d_013, d_014, d_11, d_12, d_13, d_14, d_15, d_16, d_17, d_110]
 list_lb = ['d_01', 'd_02', 'd_04', 'd_05', 'd_06', 'd_07', 'd_09', 'd_012', 'd_013','d_014','d_11', 'd_12', 'd_13', 'd_14', 'd_15','d_16', 'd_17', 'd_110']
 
-def annotate_str(df, d, label) :
+def annotate_str(df, d, label):
     p_c = []
     labl = label
-    if labl == 'd_f' :
+    if labl == 'd_f':
         for i in range(len(df)):
-            if df.iloc[i, 2] == 0 :
-                for p in d.values():
-                    p_c.append(p.search(str(df.iloc[i, 1])))
+            if df.iloc[i, 2] == 0:
+                p_c.extend(p.search(str(df.iloc[i, 1])) for p in d.values())
                 if any(p_c):
                     df.iloc[i, 2] = 'd_12'
-            else:
-                pass
-    else :
-        for i in range(len(df)) :
-            p_c =[]
-            for p in d.values() :
-                p_c.append(p.search(str(df.iloc[i,1])))
+    else:
+        for i in range(len(df)):
+            p_c = [p.search(str(df.iloc[i,1])) for p in d.values()]
             if any(p_c) :
                 df.iloc[i, 2] = labl
     return df
